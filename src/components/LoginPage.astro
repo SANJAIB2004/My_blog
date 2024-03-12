@@ -1,0 +1,15 @@
+---
+const{User_name,Password} = Astro.props;
+---
+
+<div>
+   
+ <form class="flex items-center h-screen justify-center">
+    <div class="flex flex-col h-screen items-center p-10 gap-7 border-8 border-black bg-gray-50 max-h-72 max-w-lg"><h1 class="text-2xl font-bold">Login</h1>
+      <input type="text" placeholder="Enter the User_name" class="border-black text-xl font-mono" value={User_name}  />
+      <input type="password" placeholder="Enter the Password" class="border-black text-xl font-mono" value={Password} />
+      <button type="submit" class="text-black text-2xl hover:text-black hover:bg-white">Login</button>
+    </div>
+  </form>
+
+</div>
